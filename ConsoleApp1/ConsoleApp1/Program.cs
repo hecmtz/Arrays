@@ -220,6 +220,36 @@ namespace Arrays
             //las almacena en un array y calcula y escribe su media
             //(para probar, se pueden generar aleatoriamente entre 18 y 35). 
 
+            /*
+            int[] edades = new int[20];
+            int sum=0 , nump=0;
+
+            for ( int i =0; edades.Length> i; i++)
+            {
+                Console.WriteLine("Ingresa tu edad");
+                edades[i] = Convert.ToInt32(Console.ReadLine());
+                if (edades [i]>18 && edades[i] < 35)
+                {
+                    sum = sum + edades[i];
+                    nump++;
+                    //Console.WriteLine("Edad de array " + i + "edad :  " + edades[i]);
+                }
+                
+            }
+            for (int i = 0; edades.Length > i; i++)
+            {
+                Console.WriteLine("Edad de array " + (i+1) + " es :  " + edades[i]);
+            }
+            Console.WriteLine("La media es "+ (sum/nump));
+            Console.ReadLine();
+            */
+
+            //
+
+            //Cargar una tabla de 20 componentes enteros y calcular la suma 
+            //de los componentes de posición par y  el producto de los componentes
+            // de posición impar. Los valores se generarán aleatoriamente entre 1 y 100.
+
 
 
 
