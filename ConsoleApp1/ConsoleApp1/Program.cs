@@ -247,18 +247,136 @@ namespace Arrays
             //
 
             //Cargar una tabla de 20 componentes enteros y calcular la suma 
-            //de los componentes de posición par y  el producto de los componentes
+            //de los componentes de posición par y  el producto (%) de los componentes
             // de posición impar. Los valores se generarán aleatoriamente entre 1 y 100.
 
+            /*
+            int[] numeros = new int[20];
+            int sum=0 , resu=0, prod=1, nHayImp=1 , nHayP = 1 ;
+
+           
+            for (int i=0; i<numeros.Length; i++)
+            {
+                Console.WriteLine("Ingresa una cantidad para el numero "+(i+1)+" : ");
+                numeros[i]= Convert.ToInt32(Console.ReadLine());
+            }
+            for(int j=0; j< numeros.Length; j++)
+            { 
+                if (numeros[j] % 2 == 1)
+                {
+                    prod= prod* numeros[j];
+                    nHayImp = 0;
+                    sum++;
+                }
+                else
+                {
+                    nHayP = 0;
+                    resu = resu + numeros[j];
+                }
+            }
+            if (nHayP == 0)
+            {
+                Console.WriteLine("   La suma de los pares es " + resu);
+            }
+            else
+            {
+                Console.WriteLine("   No se ingresaron numeros pares");
+            }
+            
+            if(nHayImp ==0)
+            {
+                Console.WriteLine("   El producto de los impares es " + prod);
+            }
+            else
+            {
+                Console.WriteLine("   No se ingresaron numeros impares" );
+            }
+     */
+
+            //Cargar una tabla de 20 elementos donde cada elemento almacenará un valor entre 1 y 9
+            //(genéralos de forma aleatoria) y escribir, además del contenido de la tabla,
+            //la cantidad de 1, cantidad de 2, cantidad de 3…, cantidad de 9 almacenados en ella. 
+
+
+            //prueba
+            /*
+                        Console.ReadLine();
+
+                        int[] numeros = new int[4];
+                        int i = 0;
+                        int value;
+                        do
+                        {
+                            Console.WriteLine(" Ingresa un numero entre 1 y 9 : ");
+                            value=Convert.ToInt32(Console.ReadLine());
+
+                            if (value<=9 & value>=1)
+                            {
+
+                            }
+                            else
+                            {
+
+                            }
+                            i++;
+                        } while (numeros.Length > i);
+                        */
+
+
+            
+            int nN , x=0;
+            int[] numeros = new int[20];
+            Random rnd = new Random();
+
+            for (int i = 0; numeros.Length > i; i++)
+            {
+                numeros[i] = 0;
+
+                //Console.WriteLine("el Array " + (i + 1) + "es : "+ numeros[i]);
+            }
+            do
+            {
+                nN = rnd.Next(0, 9);
+                if (nN >= 0 && nN <numeros.Length)
+                {
+
+                    numeros[nN]++;
+                }
+
+                x++;
+            } while (numeros.Length>x); // numero de variables = 20
+
+            //mostrar numeros
+            for (int i = 0; numeros.Length > i; i++)
+            {
+                Console.WriteLine(i + " : " + numeros[i]);
+
+                //Console.WriteLine("el Array " + (i + 1) + "es : "+ numeros[i]);
+            }
+
+            Console.ReadLine();
+            
+
+            //Cargar dos tablas, una con los nombres y otra con las calificaciones de los N alumnos de una clase de Programación. 
+            //Rellenar arrays con el nombre del alumno y su nota validando entre 0 y 10.
+            //Calcular la media de la clase
+            //Escribir los alumnos cuya nota es mayor que la media.
+            //Calcular la nota máxima y quienes la han conseguido
+            //Calcular la nota mínima y quienes la han conseguido
+        //Mostrar la lista de alumnos junto con su nota correspondiente: 
+//Nombre1 Apellido11 Apellido12 - Nota
+//Nombre2 Apellido21 Apellido22 - Nota
 
 
 
         }
+
+    }
 
 
 
     }
 
-        }
+     
     
 
